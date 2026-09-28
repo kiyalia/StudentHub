@@ -1,0 +1,8 @@
+/* profile.css - Profile page: avatar + details list */
+.profile { display: flex; flex-direction: column; gap: 1.5rem; align-items: center; background: var(--surface); padding: 1.5rem; border-radius: 12px; }
+.profile figure { margin: 0; text-align: center; }
+.profile img { border-radius: 50%; }
+.profile dl { display: grid; grid-template-columns: max-content 1fr; gap: .4rem 1rem; }
+dt { font-weight: 600; } dd { margin: 0; }
+
+@media (min-width: 768px) { .profile { flex-direction: row; } }

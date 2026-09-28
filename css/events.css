@@ -1,0 +1,4 @@
+/* events.css - Events page: event cards */
+.card h2 { font-size: 1.25rem; color: var(--primary); }
+.card time { font-weight: 600; }
+.card .btn { margin-top: .5rem; }

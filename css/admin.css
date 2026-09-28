@@ -1,0 +1,8 @@
+/* admin.css - Admin panel: responsive data table */
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: var(--surface); }
+th, td { padding: .7rem; border: 1px solid var(--border); text-align: left; }
+th { background: var(--primary); color: #fff; }
+[data-theme="dark"] th { color: #0f172a; }
+caption { text-align: left; font-weight: 600; padding: .5rem 0; }
+tbody tr:nth-child(even) { background: var(--bg); }

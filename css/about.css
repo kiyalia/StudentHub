@@ -1,0 +1,4 @@
+/* about.css - About page */
+main > section p { max-width: 70ch; }
+.notice { background: var(--surface); border-left: 5px solid var(--primary); padding: .8rem 1rem; margin: 1.5rem 0; border-radius: 6px; }
+.card h3 { color: var(--primary); }

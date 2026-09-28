@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudentHub - Admin">
+  <title>Admin | StudentHub</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="notification" id="notificationBanner" role="status">
+    <span>&#128226; New: Tech Fest 2026 registrations are open until 15 October!</span>
+    <button id="closeBanner" aria-label="Dismiss notification">&times;</button>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">&#127891; StudentHub</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="btn btn-outline" id="themeToggle" type="button">&#127769; Dark mode</button>
+      </nav>
+    </div>
+  </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="index.html">Home</a></li><li aria-current="page">Admin</li></ol>
+    </nav>
+  <main id="main-content" class="container">
+    <h1>Admin Panel</h1>
+    <section><h2>Registered students</h2>
+      <div class="table-wrap"><table>
+        <caption>Latest registrations</caption>
+        <thead><tr><th scope="col">ID</th><th scope="col">Name</th><th scope="col">Course</th><th scope="col">Status</th></tr></thead>
+        <tbody>
+          <tr><td>D26DCE161</td><td>Shagun Desai</td><td>B.Tech CE</td><td>Active</td></tr>
+          <tr><td>D26DCE162</td><td>Aarav Shah</td><td>B.Tech CE</td><td>Active</td></tr>
+          <tr><td>D26DIT045</td><td>Riya Patel</td><td>B.Tech IT</td><td>Pending</td></tr>
+          <tr><td>D26DEC012</td><td>Kunal Mehta</td><td>B.Tech EC</td><td>Active</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 StudentHub. All rights reserved.</p>
+      <p><a href="contact.html">Contact</a> | <a href="faq.html">FAQ</a> | <a href="feedback.html">Feedback</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

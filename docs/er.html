@@ -1,0 +1,13 @@
+<html><body style="margin:0;font-family:Segoe UI,Arial;background:#fff"><style>
+.t{border:2px solid #4f46e5;border-radius:6px;width:200px;font-size:13px;background:#fff}.t h4{margin:0;background:#4f46e5;color:#fff;padding:6px 8px}
+.t div{padding:3px 8px;border-top:1px solid #e2e8f0}.pk{font-weight:700}
+</style><div style="padding:24px;display:grid;grid-template-columns:repeat(4,200px);gap:60px 70px;position:relative;width:1050px">
+<div class="t"><h4>USERS</h4><div class="pk">user_id (PK)</div><div>name</div><div>email</div><div>mobile</div><div>password_hash</div><div>role</div></div>
+<div class="t"><h4>PROFILES</h4><div class="pk">profile_id (PK)</div><div>user_id (FK)</div><div>course</div><div>year</div><div>gender</div></div>
+<div class="t"><h4>EVENTS</h4><div class="pk">event_id (PK)</div><div>title</div><div>date</div><div>venue</div><div>created_by (FK)</div></div>
+<div class="t"><h4>EVENT_REGISTRATIONS</h4><div class="pk">reg_id (PK)</div><div>user_id (FK)</div><div>event_id (FK)</div><div>reg_date</div></div>
+<div class="t"><h4>FEEDBACK</h4><div class="pk">feedback_id (PK)</div><div>user_id (FK)</div><div>rating</div><div>comments</div></div>
+<div class="t"><h4>NOTICES</h4><div class="pk">notice_id (PK)</div><div>title</div><div>body</div><div>posted_by (FK)</div></div>
+<div class="t"><h4>FAQ</h4><div class="pk">faq_id (PK)</div><div>question</div><div>answer</div></div>
+<div style="align-self:center;font-size:13px;color:#475569">USERS 1 - 1 PROFILES<br>USERS 1 - N EVENT_REGISTRATIONS<br>EVENTS 1 - N EVENT_REGISTRATIONS<br>USERS 1 - N FEEDBACK<br>USERS 1 - N NOTICES / EVENTS</div>
+</div></body></html>

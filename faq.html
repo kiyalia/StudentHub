@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudentHub - FAQ">
+  <title>FAQ | StudentHub</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/faq.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="notification" id="notificationBanner" role="status">
+    <span>&#128226; New: Tech Fest 2026 registrations are open until 15 October!</span>
+    <button id="closeBanner" aria-label="Dismiss notification">&times;</button>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">&#127891; StudentHub</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="faq.html" aria-current="page">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="btn btn-outline" id="themeToggle" type="button">&#127769; Dark mode</button>
+      </nav>
+    </div>
+  </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="index.html">Home</a></li><li aria-current="page">FAQ</li></ol>
+    </nav>
+  <main id="main-content" class="container">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq">
+      <button class="faq-question" aria-expanded="false">How do I create an account?</button>
+      <div class="faq-answer"><p>Go to the Register page, fill in all required fields and submit the form.</p></div>
+      <button class="faq-question" aria-expanded="false">I forgot my password. What should I do?</button>
+      <div class="faq-answer"><p>Use the Forgot Password link on the Login page to reset it.</p></div>
+      <button class="faq-question" aria-expanded="false">How can I register for an event?</button>
+      <div class="faq-answer"><p>Open the Events page and click Register on the event you like.</p></div>
+      <button class="faq-question" aria-expanded="false">Who can access the admin panel?</button>
+      <div class="faq-answer"><p>Only authorised administrators can access the admin panel.</p></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 StudentHub. All rights reserved.</p>
+      <p><a href="contact.html">Contact</a> | <a href="faq.html">FAQ</a> | <a href="feedback.html">Feedback</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

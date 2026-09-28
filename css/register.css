@@ -1,0 +1,16 @@
+/* register.css - Registration form: validation states, strength meter, canvas captcha */
+input.invalid, select.invalid { border-color: var(--danger); }
+input.valid, select.valid { border-color: var(--success); }
+.error { display: block; color: var(--danger); font-size: .88rem; min-height: 1.1rem; margin-top: .25rem; }
+.req { color: var(--danger); }
+.success { color: var(--success); font-weight: 600; }
+
+/* password strength meter */
+.strength { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; margin-top: .4rem; }
+.strength-bar { height: 100%; width: 0; transition: width .3s, background .3s; }
+
+/* captcha */
+.captcha-row { display: flex; gap: .6rem; align-items: center; margin-bottom: .5rem; }
+canvas { border: 1px solid var(--border); border-radius: 6px; background: #eef2ff; max-width: 100%; }
+
+@media (min-width: 768px) { .form { padding: 1.8rem; } }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudentHub - Dashboard">
+  <title>Dashboard | StudentHub</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="notification" id="notificationBanner" role="status">
+    <span>&#128226; New: Tech Fest 2026 registrations are open until 15 October!</span>
+    <button id="closeBanner" aria-label="Dismiss notification">&times;</button>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">&#127891; StudentHub</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="dashboard.html" aria-current="page">Dashboard</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="btn btn-outline" id="themeToggle" type="button">&#127769; Dark mode</button>
+      </nav>
+    </div>
+  </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="index.html">Home</a></li><li aria-current="page">Dashboard</li></ol>
+    </nav>
+  <main id="main-content" class="container">
+    <h1>Student Dashboard</h1>
+    <section aria-labelledby="stats"><h2 id="stats">Overview</h2>
+      <div class="grid cards">
+        <article class="card stat"><h3>Attendance</h3><p class="big">86%</p></article>
+        <article class="card stat"><h3>CGPA</h3><p class="big">8.4</p></article>
+        <article class="card stat"><h3>Events joined</h3><p class="big">5</p></article>
+        <article class="card stat"><h3>Pending fees</h3><p class="big">&#8377; 0</p></article>
+      </div>
+    </section>
+    <div class="two-col">
+      <section aria-labelledby="notices"><h2 id="notices">Notices</h2>
+        <ul class="list"><li>Mid-semester exams start 5 October.</li><li>Submit WDF practical files by Friday.</li><li>Library will remain open till midnight.</li></ul>
+      </section>
+      <aside aria-labelledby="quick"><h2 id="quick">Quick links</h2>
+        <ul class="list"><li><a href="profile.html">My profile</a></li><li><a href="events.html">Upcoming events</a></li><li><a href="feedback.html">Give feedback</a></li></ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 StudentHub. All rights reserved.</p>
+      <p><a href="contact.html">Contact</a> | <a href="faq.html">FAQ</a> | <a href="feedback.html">Feedback</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

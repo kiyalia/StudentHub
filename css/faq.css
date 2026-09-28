@@ -1,0 +1,3 @@
+/* faq.css - FAQ page: centred accordion column */
+.faq { max-width: 800px; margin-bottom: 1rem; }
+.faq-question { font-size: 1.05rem; }

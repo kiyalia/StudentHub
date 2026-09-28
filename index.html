@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudentHub - Home">
+  <title>Home | StudentHub</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="notification" id="notificationBanner" role="status">
+    <span>&#128226; New: Tech Fest 2026 registrations are open until 15 October!</span>
+    <button id="closeBanner" aria-label="Dismiss notification">&times;</button>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">&#127891; StudentHub</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="btn btn-outline" id="themeToggle" type="button">&#127769; Dark mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Welcome to StudentHub</h1>
+      <p>One portal for events, courses, results and campus life.</p>
+      <p><a class="btn" href="register.html">Join now</a> <button class="btn btn-outline" id="openModalBtn" type="button">Open modal</button></p>
+    </section>
+
+    <section aria-labelledby="slider-title">
+      <h2 id="slider-title">Campus highlights</h2>
+      <div class="slider" aria-roledescription="carousel" aria-label="Campus highlights">
+        <div class="slide active"><h3>&#127942; Tech Fest 2026</h3><p>Hackathons, robotics and coding contests.</p></div>
+        <div class="slide"><h3>&#128218; Library 24x7</h3><p>Digital library open all night during exams.</p></div>
+        <div class="slide"><h3>&#127908; Cultural Night</h3><p>Music, dance and drama by student clubs.</p></div>
+        <button class="slider-btn prev" id="prevSlide" aria-label="Previous slide">&#10094;</button>
+        <button class="slider-btn next" id="nextSlide" aria-label="Next slide">&#10095;</button>
+        <div class="dots" id="sliderDots" role="tablist"></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="features-title">
+      <h2 id="features-title">Key modules</h2>
+      <div class="grid cards">
+        <article class="card"><h3>Events</h3><p>Browse and register for upcoming events.</p></article>
+        <article class="card"><h3>Dashboard</h3><p>Track attendance, results and notices.</p></article>
+        <article class="card"><h3>Profile</h3><p>Manage your personal and academic details.</p></article>
+        <article class="card"><h3>Feedback</h3><p>Share suggestions with the administration.</p></article>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq-title">
+      <h2 id="faq-title">Quick FAQ</h2>
+      <div class="faq">
+        <button class="faq-question" aria-expanded="false">How do I register?</button>
+        <div class="faq-answer"><p>Open the Register page, fill in the form and accept the terms.</p></div>
+        <button class="faq-question" aria-expanded="false">Is StudentHub free?</button>
+        <div class="faq-answer"><p>Yes, it is free for all enrolled students.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 StudentHub. All rights reserved.</p>
+      <p><a href="contact.html">Contact</a> | <a href="faq.html">FAQ</a> | <a href="feedback.html">Feedback</a></p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <button class="modal-close" id="closeModalBtn" aria-label="Close dialog">&times;</button>
+      <h2 id="modalTitle">Welcome to StudentHub!</h2>
+      <p>This modal is pure JavaScript: it opens on click, closes with Esc, the X button or a click outside.</p>
+      <button class="btn" id="modalOkBtn">Got it</button>
+    </div>
+  </div>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

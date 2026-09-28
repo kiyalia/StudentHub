@@ -1,0 +1,3 @@
+/* feedback.css - Feedback page */
+textarea { resize: vertical; min-height: 120px; }
+select { cursor: pointer; }

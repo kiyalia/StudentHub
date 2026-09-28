@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudentHub - Register">
+  <title>Register | StudentHub</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="notification" id="notificationBanner" role="status">
+    <span>&#128226; New: Tech Fest 2026 registrations are open until 15 October!</span>
+    <button id="closeBanner" aria-label="Dismiss notification">&times;</button>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">&#127891; StudentHub</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html" aria-current="page">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="btn btn-outline" id="themeToggle" type="button">&#127769; Dark mode</button>
+      </nav>
+    </div>
+  </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="index.html">Home</a></li><li aria-current="page">Register</li></ol>
+    </nav>
+  <main id="main-content" class="container">
+    <h1>Student Registration</h1>
+    <p>Fields marked <span class="req">*</span> are required.</p>
+    <form id="registerForm" class="form" novalidate>
+      <div class="field">
+        <label for="fullName">Full name <span class="req">*</span></label>
+        <input type="text" id="fullName" name="fullName" placeholder="e.g. Shagun Desai" autocomplete="name" aria-describedby="fullName-err" required>
+        <span class="error" id="fullName-err" role="alert"></span>
+      </div>
+      <div class="field">
+        <label for="email">Email <span class="req">*</span></label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" aria-describedby="email-err" required>
+        <span class="error" id="email-err" role="alert"></span>
+      </div>
+      <div class="field">
+        <label for="mobile">Mobile number <span class="req">*</span></label>
+        <input type="tel" id="mobile" name="mobile" placeholder="10-digit number" maxlength="10" inputmode="numeric" aria-describedby="mobile-err" required>
+        <span class="error" id="mobile-err" role="alert"></span>
+      </div>
+      <div class="field">
+        <label for="password">Password <span class="req">*</span></label>
+        <input type="password" id="password" name="password" autocomplete="new-password" aria-describedby="password-err strength-text" required>
+        <div class="strength"><div class="strength-bar" id="strengthBar"></div></div>
+        <small id="strength-text">Password strength: -</small>
+        <span class="error" id="password-err" role="alert"></span>
+      </div>
+      <div class="field">
+        <label for="confirmPassword">Confirm password <span class="req">*</span></label>
+        <input type="password" id="confirmPassword" name="confirmPassword" autocomplete="new-password" aria-describedby="confirmPassword-err" required>
+        <span class="error" id="confirmPassword-err" role="alert"></span>
+      </div>
+      <div class="field">
+        <label for="course">Course <span class="req">*</span></label>
+        <select id="course" name="course" aria-describedby="course-err" required>
+          <option value="">-- Select course --</option>
+          <option>B.Tech CE</option><option>B.Tech IT</option><option>B.Tech EC</option><option>BCA</option><option>MCA</option>
+        </select>
+        <span class="error" id="course-err" role="alert"></span>
+      </div>
+      <div class="field">
+        <label for="year">Year <span class="req">*</span></label>
+        <select id="year" name="year" aria-describedby="year-err" required>
+          <option value="">-- Select year --</option>
+          <option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option>
+        </select>
+        <span class="error" id="year-err" role="alert"></span>
+      </div>
+      <fieldset class="field" aria-describedby="gender-err">
+        <legend>Gender <span class="req">*</span></legend>
+        <label class="inline"><input type="radio" name="gender" value="Male"> Male</label>
+        <label class="inline"><input type="radio" name="gender" value="Female"> Female</label>
+        <label class="inline"><input type="radio" name="gender" value="Other"> Other</label>
+        <span class="error" id="gender-err" role="alert"></span>
+      </fieldset>
+      <div class="field">
+        <label for="captchaInput">Captcha <span class="req">*</span></label>
+        <div class="captcha-row">
+          <canvas id="captchaCanvas" width="150" height="46" aria-label="Captcha image"></canvas>
+          <button type="button" class="btn btn-outline" id="refreshCaptcha" aria-label="Refresh captcha">&#8635;</button>
+        </div>
+        <input type="text" id="captchaInput" name="captcha" placeholder="Type the characters" autocomplete="off" aria-describedby="captcha-err" required>
+        <span class="error" id="captcha-err" role="alert"></span>
+      </div>
+      <div class="field">
+        <label class="inline"><input type="checkbox" id="terms" name="terms" aria-describedby="terms-err"> I accept the terms and conditions <span class="req">*</span></label>
+        <span class="error" id="terms-err" role="alert"></span>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn">Register</button>
+        <button type="reset" class="btn btn-outline" id="resetBtn">Reset</button>
+      </div>
+      <p id="formSuccess" class="success" role="status" hidden></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 StudentHub. All rights reserved.</p>
+      <p><a href="contact.html">Contact</a> | <a href="faq.html">FAQ</a> | <a href="feedback.html">Feedback</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/validate.js" defer></script>
+</body>
+</html>

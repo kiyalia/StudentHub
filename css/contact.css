@@ -1,0 +1,6 @@
+/* contact.css - Contact page: form + address */
+.two-col { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+textarea { resize: vertical; }
+address { font-style: normal; line-height: 1.8; background: var(--surface); padding: 1rem; border-radius: 12px; border: 1px solid var(--border); }
+
+@media (min-width: 768px) { .two-col { grid-template-columns: 2fr 1fr; } }
